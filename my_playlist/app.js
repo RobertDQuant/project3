@@ -1,7 +1,7 @@
 /* setting up express */
 const express = require('express');
 const path = require('path');
-const logger = require('moragn');
+const logger = require('morgon');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const app = express();
