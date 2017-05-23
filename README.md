@@ -11,31 +11,31 @@
 
 ##### When the page loads, the user will see a "featured tracks" hero/jumbotron, a nav bar, and a playlist of songs from our database.
 
-![wireframe](./index.png)
+![wireframe](./assets/readme/index.png)
 
 #### Edit
 
 ##### When the user clicks the edit button, and then clicks a song from the song list, a form will drop down over the song list and they will be able to edit the values for the specified song.When the user clicks save the song will be updated to db.
 
-![wireframe](./edit.png)
+![wireframe](./assets/readme/edit.png)
 
 #### Add
 
 ##### When user clicks the add button denoted by a plus symbol, a form will drop down over the song list where the user can enter in data for artist,song url,song name. When the user clicks the save button, the form data will be saved as a new song.
 
-![wireframe](./add.png)
+![wireframe](./assets/readme/add.png)
 
 #### Delete
 
 ##### When the user clicks the delete button denoted by the minus symbol, "x" buttons will appear next to each song in the song list. When the user clicks an "x" button, the song that it is next to will be deleted from the song list.
 
-![wireframe](./delete.png)
+![wireframe](./assets/readme/delete.png)
 
 #### Feature Tracks
 
 ##### When the user clicks one of the featured tracks slides, the music player will play the song that was clicked.
 
-![wireframe](./featured.png)
+![wireframe](./assets/readme/featured.png)
 
 
 Artist.                       
