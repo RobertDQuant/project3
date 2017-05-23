@@ -6,12 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon app.js",
-<<<<<<< HEAD
-    "start": "node app.js"
-=======
     "start": "node app.js",
     "debugger": "DEBUG=*:* npm run dev"
->>>>>>> 9221fa0436e3b1dd51187f9e32cfd8839d004dd0
   },
   "author": "Group 8",
   "license": "ISC",

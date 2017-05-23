@@ -1,7 +1,7 @@
 /* setting up express */
 const express = require('express');
 const path = require('path');
-const logger = require('moragn');
+const logger = require('morgan');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const app = express();
@@ -9,7 +9,7 @@ const app = express();
 /* setting up port & listen */
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, function() {
-    consile.log(`listening on port ${PORT}`);
+    console.log(`listening on port ${PORT}`);
 });
 
 /* setting static file */
@@ -29,7 +29,7 @@ app.get('/', function(req,res) {
 });
 
 /* myPlyalist API route */
-const myPlaylistRoutes = require('./routes/myPlaylistRPutes');
+const myPlaylistRoutes = require('./routes/myPlaylistRoutes');
 app.use('/api/myplaylist', myPlaylistRoutes);
 
 /* handling 404 */
