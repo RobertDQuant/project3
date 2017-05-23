@@ -9,7 +9,7 @@ const app = express();
 /* setting up port & listen */
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, function() {
-    consile.log(`listening on port ${PORT}`);
+    console.log(`listening on port ${PORT}`);
 });
 
 /* setting static file */
@@ -28,7 +28,7 @@ app.get('/', function(req,res) {
     res.sendFile(__dirname + '/public/index.html');
 });
 
-/* myPlyalist API route */
+/* myPlaylist API route */
 const myPlaylistRoutes = require('./routes/myPlaylistRPutes');
 app.use('/api/myplaylist', myPlaylistRoutes);
 
