@@ -1,7 +1,7 @@
 /* setting up express */
 const express = require('express');
 const path = require('path');
-const logger = require('morgon');
+const logger = require('morgan');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const app = express();
@@ -28,8 +28,8 @@ app.get('/', function(req,res) {
     res.sendFile(__dirname + '/public/index.html');
 });
 
-/* myPlaylist API route */
-const myPlaylistRoutes = require('./routes/myPlaylistRPutes');
+/* myPlyalist API route */
+const myPlaylistRoutes = require('./routes/myPlaylistRoutes');
 app.use('/api/myplaylist', myPlaylistRoutes);
 
 /* handling 404 */
