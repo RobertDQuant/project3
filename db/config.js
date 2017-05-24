@@ -10,7 +10,7 @@ if (process.env.NODE_ENV === 'development' || !process.env.NODE_ENV) {
     host: 'localhost',
   });
 } else if (process.env.NODE_ENV === 'production') {
-  console.log(process.env.DATABASE_URL)
+  console.dir(process.env.DATABASE_URL)
   db = pgp(process.env.DATABASE_URL);
 }
 
