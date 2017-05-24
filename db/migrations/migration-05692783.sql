@@ -1,5 +1,3 @@
-\connect cmer
-
 CREATE TABLE IF NOT EXISTS songs (
   id BIGSERIAL PRIMARY KEY,
   artist VARCHAR(255),
