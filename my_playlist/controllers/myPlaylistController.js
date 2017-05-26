@@ -33,7 +33,7 @@ myPlaylistController.create = (req, res) => {
   Playlist.create({
     src: req.body.src,
     name: req.body.name,
-    artist_id: req.body.artist_id,
+    artist: req.body.artist,
   })
   .then(song => {
     res.json({message: 'ok', song: song});
@@ -61,8 +61,8 @@ myPlaylistController.edit = (req, res) => {
 myPlaylistController.update = (req, res) => {
   Playlist.update({
     src: req.body.src,
-    name: req.body.name,
-    artist_id: req.body.artist_id,
+    song: req.body.song,
+    artist: req.body.artist,
   }, req.params.id)
   .then(song => {
     res.json({message: 'ok', song: song});
